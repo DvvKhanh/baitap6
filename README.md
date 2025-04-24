@@ -21,12 +21,42 @@ Ghi chú: Giải thích tại sao lại có SQL như vậy.
 
 # BÀI LÀM
 ## 1. Hãy nêu các bước để import được dữ liệu trong sv_tnut.sql vào sql server của em
-+ Tạo Database
++ Tạo Database sv_tnut
 ![image](https://github.com/user-attachments/assets/0ee0876d-8b3a-4648-9b67-8fffa359273d)
+
 + Vào File -> Chọn Open -> Chọn File rồi mở file sv_tnut.sql thầy đã gửi
 ![image](https://github.com/user-attachments/assets/3aa93352-ca43-4975-9c7e-6afd6087e971)
+
 + Kết quả sau khi mở file sv_tnut.sql
 ![Screenshot 2025-04-24 164812](https://github.com/user-attachments/assets/5d769048-0e0c-4cc6-a38b-a714dd830623)
-+ Sau khi mở file, chọn execute để tạo bảng và cập nhật dữ liệu cho bảng
+
++ Sau khi mở file, bấm execute để tạo bảng và cập nhật dữ liệu cho bảng
 ![image](https://github.com/user-attachments/assets/ace46210-ed54-4455-abc6-b711a7ffd24b)
 
++ Kết quả sau khi import thành công: hiển thị dữ liệu trong bảng SV
+![image](https://github.com/user-attachments/assets/448a9769-e27c-49e9-9c82-938640c55206)
+
+## 2. Dữ liệu đầu vào là tên của sv; sđt; ngày, tháng, năm sinh của sinh viên (của sv đang làm bài tập này)
++ Dữ liệu đầu vào bao gồm: tên; sđt;ngày, tháng, năm sinh của sinh viên(sv đang làm bài tập này). Tuy nhiên, toàn bộ thông tin sinh viên đã có sẵn trong cơ sở dữ liệu được import từ file sv_tnut.sql. Vì vậy, không cần nhập lại dữ liệu thủ công. Thay vào đó, chỉ cần biết mã sinh viên (masv) của bản thân, sau đó sử dụng masv để truy vấn và lấy thông tin từ bảng SV.
++ Lý do là vì:
+  - Thuộc tính masv là khóa chính (PRIMARY KEY) trong bảng SV, nên mỗi sinh viên sẽ có một mã số duy nhất.
+  - Truy vấn theo masv đảm bảo chính xác tuyệt đối, không bị nhầm lẫn với các sinh viên trùng họ tên hoặc ngày sinh.
++ Kết quả sau khi truy vấn
+![image](https://github.com/user-attachments/assets/1fe20c87-194e-43ea-aa22-f85ffa03bec7)
+
+## 3. Nhập sql để tìm xem có những sv nào trùng hoàn toàn ngày/tháng/năm với em?
+![image](https://github.com/user-attachments/assets/2c95ac46-ecf6-4525-9570-2ac15cff6e50)
+
+## 4. Nhập sql để tìm xem có những sv nào trùng ngày và tháng sinh với em?
+![Screenshot 2025-04-24 172459](https://github.com/user-attachments/assets/22258090-3271-428b-8d8c-4b6dc650f124)
+
+## 5. Nhập sql để tìm xem có những sv nào trùng tháng và năm sinh với em?
+![image](https://github.com/user-attachments/assets/aa53826c-c505-44d0-9935-b98f1bf6607f)
+
+## 6. Nhập sql để tìm xem có những sv nào trùng tên với em?
+![image](https://github.com/user-attachments/assets/0aaa9ced-03db-4f01-b84e-01f761eb5210)
+
+## 7. Nhập sql để tìm xem có những sv nào trùng họ và tên đệm với em.
+![image](https://github.com/user-attachments/assets/a3c0e015-7b2d-4b6f-b3c9-1e6daf84c66b)
+
+## 8. Nhập sql để tìm xem có những sv nào có sđt sai khác chỉ 1 số so với sđt của em.
