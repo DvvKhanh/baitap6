@@ -65,8 +65,8 @@ Ghi chú: Giải thích tại sao lại có SQL như vậy.
 ## 8. Nhập sql để tìm xem có những sv nào có sđt sai khác chỉ 1 số so với sđt của em.
 ![image](https://github.com/user-attachments/assets/5eb69f3b-fdd1-45c6-ac9d-155a367df1af)
 
-+ Kết quả hiển thị không sinh viên nào có sđt sai khác chỉ 1 số so với sđt của em.
-+ Để chắc chắn hơn thì em sẽ thêm cột số ký tự sai để kiểm tra lại
++ Kết quả hiển thị không có sinh viên nào có sđt sai khác chỉ 1 số so với sđt của em.
++ Để chắc chắn hơn thì em sẽ thêm cột số ký tự sai để kiểm tra lại.
   
 ![image](https://github.com/user-attachments/assets/4cbceb13-6b93-4176-acef-4c8053b67fb4)
 
