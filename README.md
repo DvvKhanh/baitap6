@@ -70,6 +70,7 @@ Ghi chú: Giải thích tại sao lại có SQL như vậy.
   
 ![image](https://github.com/user-attachments/assets/4cbceb13-6b93-4176-acef-4c8053b67fb4)
 
+=> Vậy là không sinh viên nào có sdt khác sdt của em 1 số.
 + SUBSTRING(sdt, 1, 1) lấy ký tự thứ 1 trong sdt.
 + IIF(... <> ..., 1, 0) trả về 1 nếu ký tự sai, 0 nếu đúng.
   
