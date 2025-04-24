@@ -24,23 +24,23 @@ Ghi chú: Giải thích tại sao lại có SQL như vậy.
 + Tạo Database sv_tnut
 ![image](https://github.com/user-attachments/assets/0ee0876d-8b3a-4648-9b67-8fffa359273d)
 
-+ Vào File -> Chọn Open -> Chọn File rồi mở file sv_tnut.sql thầy đã gửi
-![image](https://github.com/user-attachments/assets/3aa93352-ca43-4975-9c7e-6afd6087e971)
++ Vào File -> Chọn Open -> Chọn File rồi mở file sv_tnut.sql thầy gửi(đã download về)
+![image](https://github.com/user-attachments/assets/c90240ae-8689-4388-aa6b-3a408b83ebf9)
 
 + Kết quả sau khi mở file sv_tnut.sql
 ![Screenshot 2025-04-24 164812](https://github.com/user-attachments/assets/5d769048-0e0c-4cc6-a38b-a714dd830623)
 
-+ Sau khi mở file, bấm execute để tạo bảng và cập nhật dữ liệu cho bảng
++ Nhấn execute để tạo bảng và cập nhật dữ liệu cho bảng
 ![image](https://github.com/user-attachments/assets/ace46210-ed54-4455-abc6-b711a7ffd24b)
 
 + Kết quả sau khi import thành công: hiển thị dữ liệu trong bảng SV
 ![image](https://github.com/user-attachments/assets/448a9769-e27c-49e9-9c82-938640c55206)
 
 ## 2. Dữ liệu đầu vào là tên của sv; sđt; ngày, tháng, năm sinh của sinh viên (của sv đang làm bài tập này)
-+ Dữ liệu đầu vào bao gồm: tên; sđt;ngày, tháng, năm sinh của sinh viên(sv đang làm bài tập này). Tuy nhiên, toàn bộ thông tin sinh viên đã có sẵn trong cơ sở dữ liệu được import từ file sv_tnut.sql. Vì vậy, không cần nhập lại dữ liệu thủ công. Thay vào đó, chỉ cần biết mã sinh viên (masv) của bản thân, sau đó sử dụng masv để truy vấn và lấy thông tin từ bảng SV.
-+ Lý do là vì:
-  - Thuộc tính masv là khóa chính (PRIMARY KEY) trong bảng SV, nên mỗi sinh viên sẽ có một mã số duy nhất.
-  - Truy vấn theo masv đảm bảo chính xác tuyệt đối, không bị nhầm lẫn với các sinh viên trùng họ tên hoặc ngày sinh.
++ Dữ liệu đầu vào
+![image](https://github.com/user-attachments/assets/2f4d7cea-928d-4485-b0b9-17995451c694)
++ Tuy nhiên,dữ liệu đầu vào của sinh viên đã có sẵn trong cơ sở dữ liệu được import từ file sv_tnut.sql. Do đó, không thể insert vào bảng SV bởi vì thuộc tính masv là khóa chính (PK) trong bảng SV, nên mỗi sinh viên sẽ chỉ có một mã số duy nhất.
++ Để truy xuất chính xác thông tin của sinh viên đang thực hiện bài tập, cách tốt nhất là dựa vào mã số sinh viên (masv), thay vì chỉ dùng họ tên hay ngày sinh vì có thể sẽ bị trùng lặp giữa nhiều sinh viên. Việc truy vấn theo masv sẽ đảm bảo độ chính xác tuyệt đối và tránh được mọi trường hợp nhầm lẫn.
 + Kết quả sau khi truy vấn
 ![image](https://github.com/user-attachments/assets/1fe20c87-194e-43ea-aa22-f85ffa03bec7)
 
