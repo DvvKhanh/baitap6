@@ -46,15 +46,15 @@ Ghi chú: Giải thích tại sao lại có SQL như vậy.
 
 ## 3. Nhập sql để tìm xem có những sv nào trùng hoàn toàn ngày/tháng/năm với em?
 ![image](https://github.com/user-attachments/assets/2c95ac46-ecf6-4525-9570-2ac15cff6e50)
-+ WHERE ns = '2004-02-22': Lọc những sinh viên có ngày sinh (ns) là 22/02/2004.
++ WHERE ns = '2004-02-22': Lọc ra những sinh viên có ngày sinh (ns) là 22/02/2004.
 
 ## 4. Nhập sql để tìm xem có những sv nào trùng ngày và tháng sinh với em?
 ![Screenshot 2025-04-24 172459](https://github.com/user-attachments/assets/22258090-3271-428b-8d8c-4b6dc650f124)
-+ WHERE DAY(ns) = 22 AND MONTH(ns) = 02: Lọc những sinh viên sinh vào ngày 22 tháng 2
++ WHERE DAY(ns) = 22 AND MONTH(ns) = 02: Lọc ra những sinh viên sinh vào ngày 22 tháng 2
 
 ## 5. Nhập sql để tìm xem có những sv nào trùng tháng và năm sinh với em?
 ![image](https://github.com/user-attachments/assets/aa53826c-c505-44d0-9935-b98f1bf6607f)
-+ WHERE MONTH(ns) = 02 AND YEAR(ns) = 2004: Lọc những sinh viên có ngày sinh nằm trong tháng 2 năm 2004.
++ WHERE MONTH(ns) = 02 AND YEAR(ns) = 2004: Lọc ra những sinh viên có ngày sinh nằm trong tháng 2 năm 2004.
   
 ## 6. Nhập sql để tìm xem có những sv nào trùng tên với em?
 ![image](https://github.com/user-attachments/assets/0aaa9ced-03db-4f01-b84e-01f761eb5210)
