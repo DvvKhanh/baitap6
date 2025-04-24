@@ -74,7 +74,7 @@ Ghi chú: Giải thích tại sao lại có SQL như vậy.
 + IIF(... <> ..., 1, 0) trả về 1 nếu ký tự sai, 0 nếu đúng.
   
 ## 9. BẢNG SV CÓ HƠN 9000 ROWS, HÃY LIỆT KÊ TẤT CẢ CÁC SV NGÀNH KMT, SẮP XẾP THEO TÊN VÀ HỌ ĐỆM, KIỂU TIẾNG  VIỆT, GIẢI THÍCH.
-+ Trong bảng SV, chuột phải chọn Select top 1000 rows -> rồi đổi 1000 sang 10000 thì nó sẽ hiển thị tất cả sinh viên.
++ Trong bảng SV, chuột phải chọn Select top 1000 rows -> rồi đổi 1000 sang 10000, nó sẽ hiển thị tất cả sinh viên (9778 SV).
 ![image](https://github.com/user-attachments/assets/fdbd0066-5323-47be-ab17-fa07c5e7bd73)
 
 + WHERE lop LIKE N'%KMT%': Liệt kê tất cả sinh viên thuộc ngành KMT (Kỹ thuật máy tính)
